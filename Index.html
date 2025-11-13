@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JS Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to My Interactive Page</h1>
+
+  <!-- Part 1: Event Handling Example -->
+  <section id="events-section">
+    <h2>Event Handling Demo</h2>
+    <button id="clickBtn">Click Me!</button>
+    <p id="hoverText">Hover over me!</p>
+    <input type="text" id="keyInput" placeholder="Type something">
+    <p id="keyOutput"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section id="interactive-section">
+    <h2>Interactive Features</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+
+    <!-- Counter Button -->
+    <p>Counter: <span id="counter">0</span></p>
+    <button id="incrementBtn">Increment</button>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <button class="faq-btn">What is JavaScript?</button>
+      <div class="faq-content">JavaScript is a programming language for the web.</div>
+    </div>
+
+    <!-- Tabbed Interface -->
+    <div class="tabs">
+      <button class="tab-btn" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <div class="tab-content" id="tab1">Content for Tab 1</div>
+      <div class="tab-content" id="tab2">Content for Tab 2</div>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="form-section">
+    <h2>Custom Form Validation</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <span class="error" id="nameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <span class="error" id="emailError"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <span class="error" id="passwordError"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
